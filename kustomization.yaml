@@ -7,4 +7,4 @@ resources:
 - deployment.yaml
 images:
 - name: obinox/mochimochi
-  newTag: 8b2a6c764cc3813358a722fe6bd58bb00f3b9544
+  newTag: c6768e3afc8001193aae9e2461456d99e3ede3c9
