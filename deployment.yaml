@@ -1,23 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cse-undergrad-gp-manage-deployment
+  name: mochimochi-obinox-discord-bot-deployment
 spec:
   selector:
     matchLabels:
-      app.kubernetes.io/name: cse-undergrad-gp-manage
+      app.kubernetes.io/name: mochimochi-obinox-discord-bot
   replicas: 1
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: cse-undergrad-gp-manage
+        app.kubernetes.io/name: mochimochi-obinox-discord-bot
     spec:
       containers:
       - image: scgskku/cse-undergrad-gp-manage
         imagePullPolicy: Always
-        name: cse-undergrad-gp-manage
-        ports:
-        - containerPort: 8091
+        name: mochimochi-obinox-discord-bot
         envFrom:
         - secretRef:
-            name: cse-undergrad-gp-manage-secret
+            name: mochimochi-obinox-discord-bot-secret
