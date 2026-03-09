@@ -10,10 +10,10 @@ metadata:
 spec:
   tls:
     - hosts:
-        - cssys.scg.skku.ac.kr
+        - cssys.cs.skku.ac.kr
       secretName: gitops-tls
   rules:
-    - host: cssys.scg.skku.ac.kr
+    - host: cssys.cs.skku.ac.kr
       http:
         paths:
           - backend:
