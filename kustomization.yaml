@@ -8,5 +8,7 @@ resources:
 - ingress.yaml
 - service.yaml
 images:
+- name: obinox/xpenchan
+  newTag: 6a2042d9cdf2048e71e3413a52fdcdc7c4a2d309
 - name: scgskku/cse-undergrad-gp-manage
   newTag: c9c801764685722f8cbc981ec6fc96fb4c5eb4ea
